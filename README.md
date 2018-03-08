@@ -1,4 +1,10 @@
 # AWS
+AWS Documentation 
+https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-extend-cron.html
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html
+
+
 For MAC
 
 chmod 400 akak.pem
