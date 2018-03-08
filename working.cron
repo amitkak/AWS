@@ -1,0 +1,1 @@
+55 09 * * *  ~/anaconda3/envs/theano_p36/bin/python  /home/ec2-user/DataScience/Stddev/std.py > /home/ec2-user/DataScience/Stddev/expected.txt
