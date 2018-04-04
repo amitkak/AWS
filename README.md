@@ -5,6 +5,16 @@ https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-extend-cro
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html
 
 
+SSH Pre-requisites
+When you create an AWS instance you also create a private key file .pem (Privacy Enhanced Mail)
+You can use that file to log in using SSH on a MAC. 
+
+On a windows machine you can't use .pem file.
+You will need to convert it into a .ppk (Putty Private Key) file using a tool called Putty Gen
+Once converted you can use Putty to SSH.
+
+Note that once you stop and restart the instance the address changes so the scipts need to change as well.
+
 For MAC
 
 chmod 400 akak.pem
@@ -15,13 +25,12 @@ run con.sh
 
 
 
-
 FOR Windows
 
 Connect using PUTTY at 
 
-ec2-user@ec2-52-34-181-153.us-west-2.compute.amazonaws.com
-Use C:\temp\mygit\akak.ppk file in PUTTY
+Putty-> Session -> Hostname ec2-user@ec2-52-34-181-153.us-west-2.compute.amazonaws.com
+PUTTY->Connection->SSH-Auth  Use  file  C:\temp\mygit\akak.ppk 
 
 
 Update all packages
